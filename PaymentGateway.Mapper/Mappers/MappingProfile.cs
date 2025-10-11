@@ -10,7 +10,7 @@ namespace PaymentGateway.Mapper.Mappers
         public MappingProfile()
         {
             CreateMap<AddProductsDto, Products>()
-                .ForMember(dest => dest.CreatedAt, opt => opt.MapFrom(src => DateTime.UtcNow)).ForMember(dest => dest.UpdatedAt, opt => opt.MapFrom(src => DateTime.UtcNow));
+                .ForMember(dest => dest.Created, opt => opt.MapFrom(src => DateTime.UtcNow)).ForMember(dest => dest.LastModified, opt => opt.MapFrom(src => DateTime.UtcNow));
             CreateMap<Products, AddProductsDto>();
             CreateMap<Products, ProductResponse>()
           .ForMember(dest => dest.ProductId, opt => opt.MapFrom(src => src.ProductId));

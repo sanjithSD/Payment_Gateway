@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using PaymentGateway.Application.Service.Abstraction;
+using PaymentGateway.Application.Service.Implementation;
 using PaymentGateway.Data;
 using PaymentGateway.Data.Repository.Abstraction;
 using PaymentGateway.Data.Repository.Implementation;
@@ -24,6 +25,8 @@ namespace PaymentGateway.API
             builder.Services.AddControllers();
             builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
             builder.Services.AddScoped<IProductsService, ProductsService>();
+            builder.Services.AddScoped<ITransactionService, TransactionService>();
+            builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddCors(options =>
@@ -31,7 +34,7 @@ namespace PaymentGateway.API
                 options.AddPolicy("AllowReactApp",
                     policy =>
                     {
-                        policy.WithOrigins("http://localhost:5173") // your React app URL
+                        policy.WithOrigins("http://localhost:5173") // React app URL
                               .AllowAnyHeader()
                               .AllowAnyMethod();
                     });
