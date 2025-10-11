@@ -21,9 +21,11 @@ function Products() {
       handler: function (response) {
         alert(`Payment Successful! ID: ${response.razorpay_payment_id}`);
       },
-      notes: { address: "Razorpay Corporate Office" },
+      notes: { address: "Razorpay Corporate Office",product_id: selectedProduct.productId.toString(),
+},    
       theme: { color: "#3399cc" }
     };
+    console.log("product ID fromoptions:", selectedProduct.productId); // Debugging line
 
     const rzp1 = new window.Razorpay(options);
     rzp1.open();
