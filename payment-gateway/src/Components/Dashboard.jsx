@@ -22,7 +22,7 @@ function DashboardPage() {
           </tr>
         </thead>
         <tbody>
-          {transactions.length === 0 ? (
+          {transactions==null || transactions.length === 0 ? (
             <tr>
               <td colSpan="6" className="text-center">
                 No transactions found

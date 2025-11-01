@@ -13,7 +13,7 @@ function Products() {
     if (!selectedProduct) return;
 
     const options = {
-      key: "rzp_test_RJnt7ZIdyUZQzi",
+      key: "rzp_test_RaND6hS2cO4Os4",
       amount: selectedProduct.price * 100,
       currency: "USD",
       name: "Acme Corp",
