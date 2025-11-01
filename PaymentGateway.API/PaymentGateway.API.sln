@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Webhook", "Webhook", "{2134
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebhookHandler.Application", "..\WebhookHandler.Application\WebhookHandler.Application.csproj", "{4612DE83-BFE8-4077-9550-91BD52B4C36A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{6C157EEE-5DE6-4941-A6E7-ECCEFF81136E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionApp1", "..\FunctionApp1\FunctionApp1.csproj", "{477DC42A-3CB6-482F-87B6-153F66BE11C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{4612DE83-BFE8-4077-9550-91BD52B4C36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4612DE83-BFE8-4077-9550-91BD52B4C36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4612DE83-BFE8-4077-9550-91BD52B4C36A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477DC42A-3CB6-482F-87B6-153F66BE11C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477DC42A-3CB6-482F-87B6-153F66BE11C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477DC42A-3CB6-482F-87B6-153F66BE11C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477DC42A-3CB6-482F-87B6-153F66BE11C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +82,7 @@ Global
 		{29CC7AED-87CE-467F-B6EE-3660DA2CB4EC} = {2134B166-DE53-4604-BEA4-46C90DCB4300}
 		{1942D1AD-A961-4874-BFAC-3964BB144708} = {2134B166-DE53-4604-BEA4-46C90DCB4300}
 		{4612DE83-BFE8-4077-9550-91BD52B4C36A} = {2134B166-DE53-4604-BEA4-46C90DCB4300}
+		{477DC42A-3CB6-482F-87B6-153F66BE11C6} = {6C157EEE-5DE6-4941-A6E7-ECCEFF81136E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D31F73A5-CB62-46AD-B0AD-B84DCBEE69BB}
